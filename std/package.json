@@ -1,0 +1,17 @@
+{
+	"name": "std",
+	"author": {
+		"name": "Edward Jones",
+		"email": "ed@kcza.net",
+		"url": "https://kcza.net"
+	},
+	"dependencies": {},
+	"version": "0.0.1",
+	"files": [
+		"libstd.a",
+		"maths.h",
+		"std.h",
+		"std.eh.json.gz"
+	],
+	"license": "GPL-3"
+}
