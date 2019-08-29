@@ -1,0 +1,22 @@
+{
+	"depends": [],
+	"environment": [
+		[
+			"print",
+			{
+				"inType": {
+					"typeConstructor": "EList",
+					"type": {
+						"typeConstructor": "char"
+					}
+				},
+				"typeConstructor": "EFunction",
+				"outType": {
+					"typeConstructor": "Unit"
+				},
+				"purity": "impure"
+			}
+		]
+	],
+	"name": "std"
+}
