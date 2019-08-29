@@ -7,8 +7,19 @@ CFLAGS := -Wall -Wextra -Wpedantic -Werror -pedantic-errors -c -O3
 AR := ar
 ARFLAGS := -rcs
 
-all: ./libstd.a;
+all: ./std.tar.gz;
 .PHONY: all
+
+./std.tar.gz: ./std.tar
+	gzip -k $^
+
+./std.tar: ./libstd.a ./std.h ./maths.h ./package.json ./std.eh.json.gz
+	tar -c -f $@ $^
+
+%.eh.json.gz: %.eh.json;
+	gzip -k $^
+
+%.eh.json:;
 
 ./libstd.a: ./std.o ./maths.o
 	$(AR) $(ARFLAGS) $@ $^
@@ -19,5 +30,5 @@ all: ./libstd.a;
 %.h: %.c;
 
 clean:
-	$(RM) *.o *.a
+	$(RM) *.o *.a *.tar *.gz
 .PHONY: clean
