@@ -7,7 +7,7 @@ CFLAGS := -Wall -Wextra -Wpedantic -Werror -pedantic-errors -c -O3
 AR := ar
 ARFLAGS := -rcs
 
-all: ./std.eh.json ./libstd.a;
+all: ./std.eh.json.gz ./libstd.a;
 .PHONY: all
 
 %.eh.json.gz: %.eh.json;
