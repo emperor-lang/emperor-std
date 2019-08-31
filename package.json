@@ -1,15 +1,11 @@
 {
 	"name": "std",
 	"author": {
-		"authorName": "Edward Jones",
+		"name": "Edward Jones",
 		"email": "ed@kcza.net",
 		"url": "https://kcza.net"
 	},
-	"dependencies": {
-		"std": "1.0.0",
-		"json": "2.1.0",
-		"font": "5.5.6"
-	},
+	"dependencies": [],
 	"version": "0.0.1",
 	"files": [
 		"libstd.a",
