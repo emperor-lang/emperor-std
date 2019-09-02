@@ -1,7 +1,7 @@
 {
 	"depends": [],
-	"environment": [
-		[
+	"environment": {
+		"env": [
 			"print",
 			{
 				"inType": {
@@ -16,7 +16,9 @@
 				},
 				"purity": "impure"
 			}
-		]
-	],
+		],
+		"purity": "pure",
+		"returns": []
+	},
 	"name": "std"
 }
