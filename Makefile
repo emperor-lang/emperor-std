@@ -11,7 +11,7 @@ all: ./std.eh.json.gz ./libstd.a;
 .PHONY: all
 
 %.eh.json.gz: %.eh.json;
-	gzip -k $^
+	gzip -kf $^
 
 %.eh.json:;
 
