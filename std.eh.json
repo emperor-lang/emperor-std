@@ -2,22 +2,24 @@
 	"depends": [],
 	"environment": {
 		"env": [
-			"print",
 			{
-				"inType": {
-					"typeConstructor": "EList",
-					"type": {
-						"typeConstructor": "char"
-					}
-				},
-				"typeConstructor": "EFunction",
-				"outType": {
-					"typeConstructor": "Unit"
-				},
-				"purity": "impure"
+				"key": "print",
+				"value": {
+					"inType": {
+						"typeConstructor": "EList",
+						"type": {
+							"typeConstructor": "char"
+						}
+					},
+					"typeConstructor": "EFunction",
+					"outType": {
+						"typeConstructor": "Unit"
+					},
+					"purity": "impure"
+				}
 			}
 		],
-		"purity": "pure",
+		"purity": "impure",
 		"returns": []
 	},
 	"name": "std"
