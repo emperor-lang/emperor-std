@@ -5,7 +5,12 @@
 		"email": "ed@kcza.net",
 		"url": "https://kcza.net"
 	},
-	"dependencies": [],
+	"dependencies": [
+		{
+			"name": "base",
+			"version": "0.0.1"
+		}
+	],
 	"version": "0.0.1",
 	"files": [
 		"libstd.a",
