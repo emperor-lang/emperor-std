@@ -15,6 +15,7 @@
 	"files": [
 		"libstd.a",
 		"maths.h",
+		"io/io/h",
 		"std.h",
 		"std.eh.json.gz"
 	],
