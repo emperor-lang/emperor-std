@@ -15,7 +15,7 @@ all: ./std.eh.json.gz ./libstd.a;
 
 %.eh.json:;
 
-./libstd.a: ./std.o ./maths.o
+./libstd.a: ./maths.o
 	$(AR) $(ARFLAGS) $@ $^
 
 %.o: %.c %.h
