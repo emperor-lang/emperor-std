@@ -1,7 +1,7 @@
 #ifndef IO_H_
 #define IO_H_
 
-#include <banned.h>
+#include <base-banned.h>
 #include <base.h>
 #include <stdio.h>
 #include <stdlib.h>
