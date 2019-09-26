@@ -1,5 +1,5 @@
-#ifndef STD_H_
-#define STD_H_
+#ifndef IO_H_
+#define IO_H_
 
 #include <banned.h>
 #include <base.h>
@@ -12,4 +12,4 @@ void write(emperorList_t*, emperorList_t*);
 void read(emperorList_t*, emperorList_t*);
 emperorList_t* getStdin();
 
-#endif
+#endif /* IO_H_ */
