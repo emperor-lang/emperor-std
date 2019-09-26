@@ -2,7 +2,7 @@
 
 .DEFAULT_GOAL := all
 
-CC := gcc-8
+CC := gcc
 CFLAGS := -Wall -Wextra -Wpedantic -Werror -pedantic-errors -c -O3
 AR := ar
 ARFLAGS := -rcs
