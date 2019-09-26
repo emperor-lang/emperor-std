@@ -1,10 +1,10 @@
 #ifndef IO_H_
 #define IO_H_
 
-#include <base-banned.h>
-#include <base.h>
 #include <stdio.h>
 #include <stdlib.h>
+
+#include <base.h>
 
 void print(emperorList_t*);
 // void printString(char*);
