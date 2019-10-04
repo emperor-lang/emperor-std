@@ -3,7 +3,8 @@
 .DEFAULT_GOAL := all
 
 CC := gcc
-CFLAGS := -Wall -Wextra -Wpedantic -Werror -pedantic-errors -c -O3
+CFLAGS := $(shell emperor-setup -cb) -I$(shell echo $$HOME)/.emperor/packages/base/0.0.1/ -L$(shell echo $$HOME)/.emperor/packages/base/0.0.1/
+CLIBS := -lbase
 AR := ar
 ARFLAGS := -rcs
 
@@ -15,11 +16,11 @@ all: ./std.eh.json.gz ./libstd.a;
 
 %.eh.json:;
 
-./libstd.a: ./maths.o
+./libstd.a: ./maths.o ./io/io.o
 	$(AR) $(ARFLAGS) $@ $^
 
-%.o: %.c %.h
-	$(CC) $(CFLAGS) $< -o $@
+./io/%.o: ./io/%.c ./io/%.h
+	$(CC) $(CFLAGS) $< -o $@ $(CLIBS)
 
 %.h: %.c;
 
