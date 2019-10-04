@@ -7,9 +7,9 @@
 #include <base.h>
 
 void print(base_Any_t);
-// void printString(char*);
-// void write(base_Any_t, base_Any_t);
-// void read(base_Any_t, base_Any_t);
-base_Any_t getStdin();
+void std_printString(char*);
+void std_write(base_Any_t, base_Any_t);
+void std_read(base_Any_t, base_Any_t);
+base_Any_t std_getStdin();
 
 #endif /* IO_H_ */
