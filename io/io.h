@@ -6,10 +6,10 @@
 
 #include <base.h>
 
-void print(emperorList_t*);
+void print(base_Any_t);
 // void printString(char*);
-void write(emperorList_t*, emperorList_t*);
-void read(emperorList_t*, emperorList_t*);
-emperorList_t* getStdin();
+// void write(base_Any_t, base_Any_t);
+// void read(base_Any_t, base_Any_t);
+base_Any_t getStdin();
 
 #endif /* IO_H_ */
